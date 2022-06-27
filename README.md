@@ -11,3 +11,11 @@
 `npm start`
 
 `npm run electron-dev`
+
+![Каталог книг](https://github.com/westberrie/library/blob/main/screenshots/s_1.png)
+
+![Выдача книг](https://github.com/westberrie/library/blob/main/screenshots/s_2.png)
+
+![Боковое меню](https://github.com/westberrie/library/blob/main/screenshots/s_3.png)
+
+![Авторы и жанры](https://github.com/westberrie/library/blob/main/screenshots/s_4.png)
