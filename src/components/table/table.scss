@@ -1,0 +1,66 @@
+@import "../../style/variables";
+
+.table {
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 8px 8px 15px 0 rgba(34, 60, 80, 0.78);
+    padding: 20px;
+    border-radius: 25px;
+    overflow-x: hidden;
+
+    border: 3px solid black;
+
+    &__head {
+        display: grid;
+        grid-template-rows: 38px;
+        justify-items: center;
+        align-items: center;
+        //column-gap: 10px;
+        font-weight: bold;
+        //margin-bottom: 10px;
+
+        span {
+            padding: 0 5px;
+            text-align: center;
+            line-height: 48px;
+            display: block;
+            width: 100%;
+            border-left: 1px solid black;
+
+        }
+    }
+}
+
+.tableRow {
+    display: grid;
+    grid-template-rows: minmax(46px, auto);
+    align-items: center;
+    justify-items: center;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out, background-color 0s;
+    border-top: 1px solid black;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        border-left: 1px solid black;
+    }
+
+    &.even {
+        background-color: rgba(203, 203, 203, 0.6);
+    }
+
+    .red {
+        color: $main-color;
+        font-weight: bold;
+    }
+
+    &.hide {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,40 @@
+@import "../../style/variables";
+
+.searchPanel {
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+
+    span {
+        margin-right: 10px;
+    }
+
+    select, input {
+        width: auto;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        margin-right: 10px;
+        padding: 0 5px;
+        border: 3px solid black;
+        border-radius: 8px;
+        outline: none;
+
+        &:focus {
+            border-color: $main-color;
+        }
+    }
+
+    //input, select {
+    //    width: 70%;
+    //    box-sizing: border-box;
+    //    outline: none;
+    //    height: 20px;
+    //    margin: 0 8px;
+    //    padding: 0 6px;
+    //    border: 1px solid black;
+    //    border-radius: 4px;
+    //}
+}

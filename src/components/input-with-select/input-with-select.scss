@@ -1,0 +1,53 @@
+@import "../../style/variables";
+
+.inputWithSelect {
+
+    label {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        span {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        position: relative;
+
+        input {
+            width: 100%;
+            font-size: 18px;
+            padding: 3px 8px;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline-color: $main-color;
+        }
+
+        ul {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 32px;
+            padding: 0 5px;
+            background-color: #fff;
+            border: 2px solid $main-color;
+            border-radius: 5px;
+            z-index: 2;
+            li {
+                margin: 5px 0;
+                padding: 3px;
+                cursor: pointer;
+                font-size: 18px;
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

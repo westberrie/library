@@ -1,0 +1,46 @@
+@import "../../style/variables";
+
+.newIssuanceForm {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 8px 8px 15px 0 rgba(34, 60, 80, 0.78);
+    border: 3px solid black;
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+
+    &__returnDate {
+        span {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 3px 8px;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline-color: $main-color;
+        }
+    }
+
+    button {
+        width: fit-content;
+        height: 25px;
+        margin: 0 auto;
+        grid-column: 1 / 3;
+        border: none;
+        background-color: white;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

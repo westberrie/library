@@ -1,0 +1,23 @@
+@import "../../style/variables";
+
+.app {
+    &__header{
+        margin-bottom: 50px;
+    }
+    &__navigation {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 -10px;
+            li {
+                margin: 0 10px;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
